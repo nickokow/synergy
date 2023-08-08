@@ -23,3 +23,28 @@ c = (num % 1000) // 100
 d = ((num % 1000) // 10) % 10
 e = (num % 1000) % 10
 print(d ** e * c / (a-b))
+
+#ПРАКТИЧЕСКИЕ ЗАДАНИЯ ДЛЯ САМОСТОЯТЕЛЬНОГО ВЫПОЛНЕНИЯ 5
+#ЗаданиеNo1
+print('Чтобы закончить нажмите ctrl+c')
+try:
+    while True:
+        try:
+            num = int(input())
+            if num < 0 and num % 2 == 0:
+                print('отрицательное четное число')
+            elif num < 0 and num % 2 != 0:
+                print('отрицательное нечетное число')
+            elif num == 0:
+                print('нулевое число')
+            elif num > 0 and num % 2 != 0:
+                print('положительное нечетное число')
+            elif num > 0 and num % 2 == 0:
+                print('положительное четное число')
+        except ValueError:
+            print('Wtf?')
+except KeyboardInterrupt:
+    print('Завершение программы')
+
+#ЗаданиеNo2
+
