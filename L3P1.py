@@ -47,4 +47,32 @@ except KeyboardInterrupt:
     print('Завершение программы')
 
 #ЗаданиеNo2
-
+glas = "aeiou"
+soglas = "bcdfghjklmnpqrstvwxyz"
+kol = 0
+kol2 = 0
+check_string = input('Введите слово: ') 
+for char in check_string:
+    if char in glas:
+        kol += 1
+if kol > 0:
+    print(f'Колличество гласных в слове {check_string}: ', kol)
+    print(f'Гласных букв в слове {check_string}: ')
+    for char in glas:
+        kol1 = check_string.count(char)
+        if kol1 >= 1:
+            print (char, kol1)
+else:
+    print(f'Гласных в слове {check_string} не обнаружено')
+for char in check_string:
+    if char in soglas:
+        kol2 += 1
+if kol2 > 0:
+   print(f'Колличество coгласных в слове {check_string}: ', kol2)
+   print(f'Согласных букв в слове {check_string}:')
+   for char in soglas:
+    kol1 = check_string.count(char)
+    if kol1 >= 1:
+        print(char, kol1)
+else:
+    print(f'Согласных в слове {check_string} не обнаружено') 
