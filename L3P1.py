@@ -78,4 +78,15 @@ else:
     print(f'Согласных в слове {check_string} не обнаружено') 
 
 #ЗаданиеNo3
+inv, mik, iva = map(int, input().split())
+if mik >= inv and iva < inv:
+    print('Mike')
+elif mik < inv and iva >= inv:
+    print('Ivan')
+elif mik >= inv and iva >= inv:
+    print(2)
+elif iva + mik >= inv:
+    print(1)
+elif mik < inv and iva < inv:
+    print(0)
 
