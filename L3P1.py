@@ -76,3 +76,6 @@ if kol2 > 0:
         print(char, kol1)
 else:
     print(f'Согласных в слове {check_string} не обнаружено') 
+
+#ЗаданиеNo3
+
