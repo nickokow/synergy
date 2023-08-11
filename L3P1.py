@@ -90,3 +90,10 @@ elif iva + mik >= inv:
 elif mik < inv and iva < inv:
     print(0)
 
+#ПРАКТИЧЕСКИЕ ЗАДАНИЯ ДЛЯ САМОСТОЯТЕЛЬНОГО ВЫПОЛНЕНИЯ 6
+#ЗаданиеNo1
+num_zeroes = 0
+for i in range(int(input())):
+    if int(input()) == 0:
+        num_zeroes += 1
+print(num_zeroes)
