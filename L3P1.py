@@ -109,3 +109,12 @@ if number <= 2e9:
 		    dels.append(i)
 		    dels.append(number // i)
     print(len(dels))
+
+#ЗаданиеNo3
+
+a = int(input())
+b = int(input())
+for i in range (a,b):
+    i += 1
+    if i % 2 == 0:
+        print(i, end=' ')
