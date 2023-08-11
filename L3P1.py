@@ -97,3 +97,15 @@ for i in range(int(input())):
     if int(input()) == 0:
         num_zeroes += 1
 print(num_zeroes)
+
+#ЗаданиеNo2
+number = int(input())
+dels = []
+for i in range(1, int(number ** 0.5) + 1):
+	if i * i == number:
+		dels.append(i)
+	elif number % i == 0:
+		dels.append(i)
+		dels.append(number // i)
+
+print(len(dels))
