@@ -4,8 +4,19 @@ opisanye,vozrast,imya = input('Вид питомца: '),input('Возраст: 
 print(f'{opisanye} по имени \"{imya}\".',f'возраст: {vozrast}')
 
 #ЗаданиеNo2
-a,b,c,d,e,f,g = input(),input(),input(),input(),input(),input(),input()
-(print(a,b,c,d,e,f,g, sep='=>'))
+c = input()
+b = []
+while True:
+    a = input()
+    b.append(a)
+    if a != '':
+        continue
+    else:
+        break
+b.pop(-1)
+for i in b:
+    print(c,' => ',i, end='')
+print()
 
 #ПРАКТИЧЕСКИЕ ЗАДАНИЯ ДЛЯ САМОСТОЯТЕЛЬНОГО ВЫПОЛНЕНИЯ 4
 #ЗаданиеNo1
