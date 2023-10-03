@@ -14,8 +14,9 @@ while True:
     else:
         break
 b.pop(-1)
+print(c,end=' ')
 for i in b:
-    print(c,' => ',i, end='')
+    print(' => ',i, end='')
 print()
 
 #ПРАКТИЧЕСКИЕ ЗАДАНИЯ ДЛЯ САМОСТОЯТЕЛЬНОГО ВЫПОЛНЕНИЯ 4
